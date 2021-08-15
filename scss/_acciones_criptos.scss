@@ -1,0 +1,255 @@
+/*Estilos para el MAIN del apartado ACCIONES y CRYPTOMONEDAS*/
+/*Estilos para el MAIN del apartado ACCIONES y CRYPTOMONEDAS*/
+/*Estilos para el MAIN del apartado ACCIONES y CRYPTOMONEDAS*/
+
+main section div.tipoDeActivos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 30px;
+    padding-top: 3%;
+}
+
+main section div h2.tituloGrande{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    margin-right: 100px;
+}
+
+main section div.tipoDeActivos form select{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    padding: 4px 8px 4px 8px;
+    margin-right: 40px;
+}
+
+main section div.tipoDeActivos form input#comprarActivo{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+}
+main section div.tipoDeActivos form input#comprarActivo:hover{
+    background-color: rgb(44, 151, 140);
+}
+
+main section div.tipoDeActivos form input#venderActivo{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    margin-right: 10px;
+}
+
+main section div.tipoDeActivos form input#venderActivo:hover{
+    background-color: rgb(44, 151, 140);
+}
+
+main section div.precioDeActivos{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+main section div.precioDeActivos span.diferenciaAyer{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 28px;
+    color:red;
+    font-weight: bold;
+}
+
+main section div.precioDeActivos span.precioActual{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 35px;
+    color:green;
+    font-weight: bold;
+}
+
+main section div.precioDeActivos span.diferenciaHoy{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 28px;
+    color:green;
+    font-weight: bold;
+}
+
+main section div.graficoActual{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+main section div.graficoActual img{
+    width: 800px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main section div.graficoActual ul{
+    list-style: none;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main section div.graficoActual ul li{
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+main section div.graficoActual ul li a{
+    font-family: 'Noto Sans', sans-serif;
+    padding: 5px 10px;
+	display:block;
+	color: black;
+	text-decoration: none;
+}
+
+/*MIXIN para Sección Dos de Acciones y Cryptos*/
+@mixin seccionDosAccionesCryptos($display, $flex-direction, $flex-wrap, $justify-content, $align-content) {
+    display: $display;
+    flex-direction: $flex-direction;
+    flex-wrap: $flex-wrap;
+    justify-content: $justify-content;
+    align-content: $align-content;
+}
+
+main section.seccionDosAcciones{
+    @include seccionDosAccionesCryptos(flex, column, wrap, center, center);
+}
+
+main section.seccionDosCryptos{
+    @include seccionDosAccionesCryptos(flex, column, wrap, center, center);
+}
+/*Fin de MIXIN*/
+
+
+main section div.tituloTablaOperaciones{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+main section div.tablaOperaciones{
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+main section div table.tablaActivo{
+    width: 70%;
+    font-family: 'Noto Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main section div table tr.tablaFilaPrincipal{
+    background-color: rgb(12, 58, 70);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+main section div table.tablaActivo td{
+    width: 30%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+/*Artículos Acciones*/
+
+main section.seccionTresAcciones{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+main section.seccionTresAcciones div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+main section.seccionTresAcciones div article#articuloUnoAcciones{
+    margin-right: 40px;
+}
+
+main section.seccionTresAcciones article#articuloUnoAcciones img{
+    width: 250px;
+    height: auto;
+}
+
+main section.seccionTresAcciones div article#articuloDosAcciones{
+    margin-right: 40px;
+}
+
+main section.seccionTresAcciones article#articuloDosAcciones img{
+    width: 250px;
+    height: auto;
+}
+
+main section.seccionTresAcciones article#articuloTresAcciones img{
+    width: 250px;
+    height: auto;
+}
+
+
+/*Artículos Cryptomonedas*/
+
+main section.seccionTresCryptos{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+main section.seccionTresCryptos div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+main section.seccionTresCryptos div article#articuloUnoCryptos{
+    margin-right: 40px;
+}
+
+main section.seccionTresCryptos article#articuloUnoCryptos img{
+    width: 250px;
+    height: auto;
+}
+
+main section.seccionTresCryptos div article#articuloDosCryptos{
+    margin-right: 40px;
+}
+
+main section.seccionTresCryptos article#articuloDosCryptos img{
+    width: 250px;
+    height: auto;
+}
+
+main section.seccionTresCryptos article#articuloTresCryptos img{
+    width: 250px;
+    height: auto;
+}

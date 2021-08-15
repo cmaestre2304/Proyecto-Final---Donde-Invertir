@@ -1,0 +1,163 @@
+/*Estilos para el MAIN del apartado CONTACTO*/
+/*Estilos para el MAIN del apartado CONTACTO*/
+/*Estilos para el MAIN del apartado CONTACTO*/
+
+.seccion__contacto{
+    width: 100%;
+}
+
+.seccion__contacto form{
+    display: grid;
+    grid-template-areas: 
+        "contactoTitulo contactoTitulo"
+        "ingreseNombre ingreseMail"
+        "ingreseAsunto ingreseTelefono"
+        "ingreseMensaje ingreseMensaje"
+        "enviarLimpiar enviarLimpiar";
+    grid-template-columns: 32.5% 32.5%;
+    grid-template-rows: 50px 80px 80px 250px 40px;
+    grid-column-gap: 30px;
+    grid-row-gap: 20px;
+    /* border: 1px solid black; */
+    justify-content: center;
+}
+
+.seccion__contacto form div .tituloDestacado{
+    font-size: 19px;
+}
+
+.contacto__formulario .contacto__titulo{
+    grid-area: contactoTitulo;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.contacto__formulario #ingreseNombre{
+    grid-area: ingreseNombre;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.contacto__formulario #ingreseMail{
+    grid-area: ingreseMail;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.contacto__formulario #ingreseAsunto{
+    grid-area: ingreseAsunto;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.contacto__formulario #ingreseTelefono{
+    grid-area: ingreseTelefono;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.contacto__formulario #ingreseMensaje{
+    grid-area: ingreseMensaje;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.contacto__formulario #enviarLimpiar{
+    grid-area: enviarLimpiar;
+    /* border: 1px solid black; */
+    width: 100%;
+}
+
+.seccion__contacto form #ingreseNombre input{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.seccion__contacto form #ingreseMail input{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.seccion__contacto form div select{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    width: 100%;
+    height: 35px;
+    margin-top: 10px;
+    background-color: rgb(12, 58, 70);
+    color: white;
+}
+
+.seccion__contacto form div select:hover{
+    background-color: rgb(44, 151, 140);
+}
+
+.seccion__contacto form #ingreseTelefono input{
+    display: inline-block;
+    width: 100%;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.seccion__contacto form #ingreseMensaje textarea{
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.seccion__contacto form div button{
+    font-family: 'Encode Sans SC', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 5px;
+    background-color: rgb(12, 58, 70);
+    color: white;
+}
+
+.seccion__contacto form div button:hover{
+    background-color: rgb(44, 151, 140);
+}
+
+.seccion__contacto form div input#limpiarCampos{
+    font-family: 'Encode Sans SC', sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+    padding: 5px;
+    background-color: rgb(12, 58, 70);
+    color: white;
+}
+
+.seccion__contacto form div input#limpiarCampos:hover{
+    background-color: rgb(44, 151, 140);
+}
+
+
+/*Media Queries (MOBILE-FIRST) de CONTACTO para Tablets y Móviles*/
+
+@media (max-width:768px){     
+    .seccion__contacto form{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*Aquí Finaliza Media Queries (MOBILE-FIRST) de CONTACTO*/

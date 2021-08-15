@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--Descripción de Sitio Web y Keywords-->
+        <meta name="description" content="El Portal Financiero donde analizamos y te contamos los mejores y más rentables activos financieros del momento.">
+        <meta name="keywords" content="invertir, criptomonedas, acciones, inversiones, finanzas, fintech, ahorros, blockchain, bitcoin, stocks">
+    
+        <!--Aquí va las distintas Tipografías-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+        <!--Se agrega la imagen Favicon para que se muestre en la Pestaña de la página junto con el título-->
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/favi.ico">
+        
+        <!--Aquí va vinculado CSS - BOOTSTRAP por CDN-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!--Aquí se vincula el archivo de Estilos CSS a mi HTML-->
+        <link rel="stylesheet" href="css/estilos.css"> 
+        
+        <!--Título de la Pestaña del Sitio Web-->
+        <title>Donde Invertir | Análisis</title>
+    
+    </head>
+<body>
+    <header>
+        <div class="header__contenedor">
+            <!--Imagen Logotipo-->
+            <div class="contenedor__logo">
+                <a href="index.html"><img src="imagenes/logo.webp" alt="Logo"></a>
+            </div>
+
+            <!--Texto que va al lado del Logotipo-->
+            <div class="contenedor__titulo">
+                <h1>donde Invertir</h1>
+            </div>
+            
+            <!--Los botones de Iniciar Sesión y Registrarse se complemenatrán con futuros cursos donde se profundiza el apartado de Formulario, debido a esto, se colocan como botones simples-->
+            <div id="barraDeRegistro">
+                <form action="###" method="###" enctype="" id="formHeaderUno">
+                    <input type="search" name="busqueda" placeholder="Busca tu Acción o Criptomoneda Preferida..." id="search">
+                    <input type="submit" value="Buscar" id="botonBuscar">
+                </form>
+
+                <!--Esto se sustituye por MODAL de BOOTSTRAP con JS-->
+                <!-- <form action="" method="" enctype="" id="formHeaderDos">
+                    <input type="submit" value="Iniciar Sesión" id="botonIniciarSesion">
+
+                    <input type="submit" value="Registrarse" id="botonRegistrarse">
+                </form> -->
+
+                <!--MODAL de BOOTSTRAP con JS-->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Iniciar Sesión
+                </button>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Registrarse
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ESTIMADO CLIENTE</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            
+                            <div class="modal-body">
+                            Este sitio web actualmente se encuentra en fase de creación y codificación para poder brindarle el mejor servicio. Muy pronto podrá invertir sus ahorros de una manera segura!
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header__navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acciones.html">Acciones</a></li>
+                <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                <li><a href="analisis.html">Análisis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="seccionUnoAnalisis">
+            <div>
+                <h2 class="tituloGrande">Análisis de Acciones</h2>
+            </div>
+
+            <div class="analisisAcciones" id="analisisSuperiorAcciones">
+                <article class="articuloAnalisis" id="articuloAccionesSuperiorUno">
+                    <a href="#" title="Santi Puig" target="_blank"><img src="imagenes/Analisis/Analista 1 - Acciones.webp" alt="Santi Puig"/></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>Nasdaq, nuevamente en máximos históricos</h3></a>
+
+                        <p class="contenidoAnalisis">Las medias móviles de 50 y 200 se mantienen por debajo del precio, RSI al alza en los 66 puntos con la resistencia en el nivel de sobre compra y la línea rápida (azul) del MACD se mantiene por debajo de la lenta (roja), pero ambas aún por encima del nivel de cero.</p>
+                        <cite>Por Santi Puig</cite>
+                    </div>
+                </article>
+
+                <article class="articuloAnalisis" id="articuloAccionesSuperiorDos">
+                    <a href="#" title="Judith Julia" target="_blank"><img src="imagenes/Analisis/Analista 2 - Acciones.webp" alt="Judith Julia" /></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>Ataque a los máximos históricos en el S&P 500</h3></a>
+                        <p class="contenidoAnalisis">Diez días después, el S&P 500 vuelve a situarse de nuevo en el área de los 4.385, donde se encuentran los máximos históricos. Su ruptura provocaría entrar en subida libre con una primera resistencia en forma de número redondo en los 4.400.</p>
+                        <cite>Por Judith Julia</cite>
+                    </div>
+                </article>
+            </div>
+
+            <div class="analisisAcciones" id="analisisMedioAcciones">
+                <article class="articuloAnalisis" id="articuloAccionesMedioUno">
+                    <a href="#" title="Diego Gutiérrez Pérez" target="_blank"><img src="imagenes/Analisis/Analista 3 - Acciones.webp" alt="Diego Gutiérrez Pérez" /></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>Morgan Stanley se queda con las mejores tajadas</h3></a>
+                        <p class="contenidoAnalisis">La entidad está haciendo lo que quiere hacer Goldman Sachs: obtener una mayor parte de sus ingresos de actividades menos volátiles.</p>
+                        <cite>Por Diego Gutiérrez Pérez</cite>
+                    </div>
+                </article>
+
+                <article class="articuloAnalisis" id="articuloAccionesMedioDos">
+                    <a href="#" title="Álvaro Liguori" target="_blank"><img src="imagenes/Analisis/Analista 4 - Acciones.webp" alt="Álvaro Liguori" /></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>Índices bursátiles norteamericanos: ¿Sigue la fiesta en Wall Street?</h3></a>
+                        <p class="contenidoAnalisis">A pesar de que el “fantasma” de la inflación sigue haciendo estragos en Norteamérica, los índices bursátiles norteamericanos están volviendo al alza, ¿hasta cuándo? Ese es el dilema que hay que estar vigilando.</p>
+                        <cite>Por Álvaro Liguori</cite>
+                    </div>
+                </article>
+            </div>
+
+            <div class="analisisAcciones" id="analisisInferiorAcciones">
+                <article class="articuloAnalisis" id="articuloAccionesInferiorUno">
+                    <a href="#" title="Joaquín Gual" target="_blank"><img src="imagenes/Analisis/Analista 5 - Acciones.webp" alt="Joaquín Gual" /></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>Otra corrección acabada en los Minis, S&P500, Dow, Nasdaq y Russell</h3></a>
+                        <p class="contenidoAnalisis">Otra corrección acabada en los Minis, S&P500, Dow, Nasdaq y Russell. Caídas durante la pasada semana en todos ellos y aparentemente este lunes hicieron suelo en zonas claves importantes.</p>
+                        <cite>Por Joaquín Gual</cite>
+                    </div>
+                </article>
+
+                <article class="articuloAnalisis" id="articuloAccionesInferiorDos">
+                    <a href="#" title="Fran Brenes" target="_blank"><img src="imagenes/Analisis/Analista 6 - Acciones.webp" alt="Fran Brenes" /></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>Dow Jones: Soporte en los 33.800 puntos</h3></a>
+                        <p class="contenidoAnalisis">Tras la caída del viernes, la tendencia bajista cobra color en el Dow Jones y cae hasta los 33.962 puntos. La media móvil de 50 ha quedado sobre la última vela, RSI a la baja en los 40 puntos y la línea rápida (azul) del MACD cruza por debajo de la lenta (roja), en dirección hacia el nivel de cero.</p>
+                        <cite>Por Fran Brenes</cite>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="seccionDosAnalisis">
+            <div>
+                <h2 class="tituloGrande">Análisis de Criptomonedas</h2>
+            </div>
+
+            <div class="analisisCryptos" id="analisisSuperiorCryptos">
+                <article class="articuloAnalisis" id="articuloCryptosSuperiorUno">
+                    <a href="#" title="Marcos Muñoz" target="_blank"><img src="imagenes/Analisis/Analista 1 - Cryptos.webp" alt="Marcos Muñoz" /></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>El gobierno quiere morder el pastel de las criptomonedas</h3></a>
+                        <p class="contenidoAnalisis">El apetito voraz de la clase política parece no tener fin e incluso una pandemia mundial no logra detenerlos. Necesitan financiar el alto gasto público, y el surgimiento de las criptomonedas es un palo en la rueda para el correcto funcionamiento de sus monopolios monetarios.</p>
+                        <cite>Por Marcos Muñoz</cite>
+                    </div>
+                </article>
+
+                <article class="articuloAnalisis" id="articuloCryptosSuperiorDos">
+                    <a href="#" title="Carlos Guillen" target="_blank"><img src="imagenes/Analisis/Analista 2 - Cryptos.webp" alt="Carlos Guillen" /></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>Rebote de las criptomonedas</h3></a>
+                        <p class="contenidoAnalisis">Fuerte rebote de todas las grandes criptomonedas en sus correspondientes soportes. BTC a última hora de la sesión recuperaba el nivel de los 30k subiendo un 7%; ETHE vemos como ha reaccionado a los 1.700 dólares subiendo un 10%; ADA ha rebotado un 13% y DOGE el que más rebota con un 18%.</p>
+                        <cite>Por Carlos Guillen</cite>
+                    </div>
+                </article>
+            </div>
+
+            <div class="analisisCryptos" id="analisisMedioCryptos">
+                <article class="articuloAnalisis" id="articuloCryptosMedioUno">
+                    <a href="#" title="Adrián Bernabéu" target="_blank"><img src="imagenes/Analisis/Analista 3 - Cryptos.webp" alt="Adrián Bernabéu" /></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>Las 3 razones por las que el precio de bitcoin que estás viendo es falso</h3></a>
+                        <p class="contenidoAnalisis">A menudo, la desinformación, la falta de conocimientos técnicos, las fake news y los comentarios de inexpertos en la red generan mitos erróneos sobre bitcoin y equívocos en cuanto a las soluciones que ofrece, los usos que podemos atribuirle en el presente y qué depara un futuro próximo.</p>
+                        <cite>Por Adrián Bernabéu</cite>
+                    </div>
+                </article>
+
+                <article class="articuloAnalisis" id="articuloCryptosMedioDos">
+                    <a href="#" title="Andrés Ordóñez" target="_blank"><img src="imagenes/Analisis/Analista 4 - Cryptos.webp" alt="Andrés Ordóñez" /></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>3 criptomonedas para este fin de semana</h3></a>
+                        <p class="contenidoAnalisis">Vamos a revisar las posibles entradas para este fin de semana en tres criptomonedas a precio de binance, algo muy importante es entender que continuamos en rango en la mayoría de las criptomonedas, por lo tanto, hay que entender que la volatilidad es un riesgo fuertísimo en estos momentos para el ecosistema. </p>
+                        <cite>Por Andrés Ordóñez</cite>
+                    </div>
+                </article>
+            </div>
+
+            <div class="analisisCryptos" id="analisisInferiorCryptos">
+                <article class="articuloAnalisis" id="articuloCryptosInferiorUno">
+                    <a href="#" title="Mauro Liberman" target="_blank"><img src="imagenes/Analisis/Analista 5 - Cryptos.webp" alt="Mauro Liberman" /></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>Bitcoin: Récord de acumulación. ¿Qué niveles esperar?</h3></a>
+                        <p class="contenidoAnalisis">El Bitcoin superó este domingo los 35.000 dólares, después de un salto fugaz de 1.000 a raíz de que los grandes tenedores de criptomonedas lanzaron el mayor pico de acumulación diaria de este 2021 con la compra de 60.000 BTC.</p>
+                        <cite>Por Mauro Liberman</cite>
+                    </div>
+                </article>
+
+                <article class="articuloAnalisis" id="articuloCryptosInferiorDos">
+                    <a href="#" title="David Fraile Garcia" target="_blank"><img src="imagenes/Analisis/Analista 6 - Cryptos.webp" alt="David Fraile Garcia" /></a>
+
+                    <div>
+                        <a href="#" target="_blank"><h3>Las mejores criptomonedas y tendencias de la semana</h3></a>
+                        <p class="contenidoAnalisis">Tres criptomonedas que han registrado la mayor rentabilidad en los últimos siete dias, el Top 3, y las monedas digitales que lideran la tabla en tendencias de búsqueda.</p>
+                        <cite>Por David Fraile Garcia</cite>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__contenedor">
+            <form action="###" method="###" enctype="">
+                <label for="reporte"><b>Suscríbete a nuestro Reporte semanal de Inversiones:</b></label>
+                <input type="email" name="newsletter" id="reporte" placeholder="Ingrese su E-mail...">
+                <input type="submit" value="Enviar" id="botonEnviar">
+            </form>
+
+            <div class="contenedor__redes">
+                <div id="redesConectate">
+                    Conectate con Nosotros
+                </div>
+
+                <!--Como no tengo perfil en redes de esta página que estoy creando, se direcciona a la página principal de caa red social-->
+                <nav class="redes__iconos">
+                    <a href="https://es-la.facebook.com/" title="facebook" target="_blank"><img src="imagenes/facebook.webp" alt="Ir a Nuestro Perfil de Facebook" id="facebook"/></a>
+
+                    <a href="https://www.instagram.com/?hl=es-la" title="instagram" target="_blank"><img src="imagenes/instagram.webp" alt="Ir a Nuestro Perfil de Instagram" id="instagram"/></a>
+
+                    <a href="https://twitter.com/?lang=es" title="twitter" target="_blank"><img src="imagenes/twitter.webp" alt="Ir a Nuestro Perfil de Twitter" id="twitter"/></a>
+                </nav>
+            </div>
+
+            <div class="contenedor__aplicaciones">
+                <span>Descarga Nuestra Aplicación</span>
+
+                <div id="downloadApps">
+                    <img src="imagenes/phone.webp" alt="phone" id="phone">
+
+                    <a title="appstore" href="https://www.apple.com/la/app-store/" target="_blank"><img src="imagenes/appstore.webp" alt="appstore" id="appStore"/></a>   
+
+                    <a title="googleplay" href="https://play.google.com/store?hl=es" target="_blank"><img src="imagenes/googleplay.webp" alt="googleplay" id="playStore"/></a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="footer__navegacion">
+            <ul>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="empleo.html">Empleo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__derechos">
+            <span>2021 - Donde Invertir - Derechos Reservados</span>
+        </div>
+    </footer>
+
+    <!--Aquí va vinculado JS - BOOTSTRAP por CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

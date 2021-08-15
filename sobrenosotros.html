@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--Descripción de Sitio Web y Keywords-->
+        <meta name="description" content="Conoce toda la tecnología empleada para mantener tus datos super seguros. Invierte con Nosotros.">
+        <meta name="keywords" content="invertir, criptomonedas, acciones, inversiones, finanzas, fintech, ahorros, blockchain, bitcoin, stocks">
+    
+        <!--Aquí va las distintas Tipografías-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+        <!--Se agrega la imagen Favicon para que se muestre en la Pestaña de la página junto con el título-->
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/favi.ico">
+        
+        <!--Aquí va vinculado CSS - BOOTSTRAP por CDN-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!--Aquí se vincula el archivo de Estilos CSS a mi HTML-->
+        <link rel="stylesheet" href="css/estilos.css"> 
+        
+        <!--Título de la Pestaña del Sitio Web-->
+        <title>Donde Invertir | Nosotros</title>
+    
+    </head>
+<body>
+    <header>
+        <div class="header__contenedor">
+            <!--Imagen Logotipo-->
+            <div class="contenedor__logo">
+                <a href="index.html"><img src="imagenes/logo.webp" alt="Logo"></a>
+            </div>
+
+            <!--Texto que va al lado del Logotipo-->
+            <div class="contenedor__titulo">
+                <h1>donde Invertir</h1>
+            </div>
+            
+            <!--Los botones de Iniciar Sesión y Registrarse se complemenatrán con futuros cursos donde se profundiza el apartado de Formulario, debido a esto, se colocan como botones simples-->
+            <div id="barraDeRegistro">
+                <form action="###" method="###" enctype="" id="formHeaderUno">
+                    <input type="search" name="busqueda" placeholder="Busca tu Acción o Criptomoneda Preferida..." id="search">
+                    <input type="submit" value="Buscar" id="botonBuscar">
+                </form>
+
+                <!--Esto se sustituye por MODAL de BOOTSTRAP con JS-->
+                <!-- <form action="" method="" enctype="" id="formHeaderDos">
+                    <input type="submit" value="Iniciar Sesión" id="botonIniciarSesion">
+
+                    <input type="submit" value="Registrarse" id="botonRegistrarse">
+                </form> -->
+
+                <!--MODAL de BOOTSTRAP con JS-->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Iniciar Sesión
+                </button>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Registrarse
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ESTIMADO CLIENTE</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            
+                            <div class="modal-body">
+                            Este sitio web actualmente se encuentra en fase de creación y codificación para poder brindarle el mejor servicio. Muy pronto podrá invertir sus ahorros de una manera segura!
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header__navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acciones.html">Acciones</a></li>
+                <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                <li><a href="analisis.html">Análisis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <!--Agrego solo información representativa, porque estoy desarrollando aún el cotenido. Pero la estructura si sería esta-->
+        <section class="seccion__nosotros--uno">
+            <div>
+                <h2 class="tituloGrande">Conócenos</h2>
+            </div>
+
+            <div class="nosotros__conocenos">
+                <p class="contenidoDestacado">En Donde Invertir creemos que las personas deben tener acceso a cualquier tipo de Inversión sin importar el país donde se encuentren o la moneda que usen.
+                    <br/><br/>
+                Ofrecemos la mejor manera de hacer crecer tus ahorros en el mediano y largo plazo a través de la compra de activos de empresas de primer nivel y las criptomonedas con mayor capitalización bursátil del mercado.
+                    <br/><br/>
+                Vemos en la tecnología una herramienta para impulsar el empoderamiento económico y democratizar el acceso a servicios financieros.
+                    <br/><br/>
+                Trabajamos cada día para construir una plataforma robusta que ofrezca servicios financieros globales de forma simple y segura.
+                </p>
+
+                <!--Este video sería como un recorrido por las instalaciones (si las hubiese) de la empresa, hablando un poco de lo que hacemos y como está conformada, básicamente un video introductorio de la empresa-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9I6L97GPHVU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div>
+                <h2 class="tituloGrande">Tecnología y Actualidad</h2>
+            </div>
+
+            <div class="nosotros__actualidad">
+                <!--Este video daría a conocer la tecnología de vanguardia que utilizamos en nuestros servidores y como la información e inversión de los usuarios estaría protegida gracias a nuevas tecnologías empleadas en nuestra plataforma-->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ZcqMLIGd_0E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                <p class="contenidoDestacado">Al utilizar nuestros servicios, nos confías tus datos. Entendemos que es una gran responsabilidad y nos esforzamos al máximo para proteger tu información y permitirte controlarla.
+                    <br/><br/>
+                Nuestro objetivo es informarte sobre qué datos recogemos, por qué los recogemos y cómo puedes actualizarlos, gestionarlos, exportarlos y eliminarlos.
+                    <br/><br/>
+                Los números de tarjetas de crédito y de débito que facilitas a Donde Invertir son cifrados y almacenados en servidores seguros en una ubicación segura.
+                    <br/><br/>
+                Algunos datos los puedes eliminar en cualquier momento, mientras que otros se eliminan automáticamente o se conservan durante periodos de tiempo más prolongados cuando resulta necesario.
+                </p>
+            </div>
+        </section>
+
+        <section class="seccion__nosotros--dos">
+            <div id="nuestroEquipoTitulo">
+                <h2 class="tituloGrande">Nuestro Equipo</h2>
+            </div>
+
+            <div class="nosotros__equipo">
+                <div class="empleado">
+                    <img src="imagenes/SobreNosotros/CEO.webp" alt="Nuestro Equipo">
+                    <h3 class="equipoNombre">Cesar Maestre</h3>
+                    <h4 class="equipoCargo">CEO - Founder</h4>
+                </div>
+
+                <div class="empleado">
+                    <img src="imagenes/SobreNosotros/Chief Financial Officer.webp" alt="Nuestro Equipo">
+                    <h3 class="equipoNombre">Aaron Carter</h3>
+                    <h4 class="equipoCargo">Chief Financial Officer</h4>
+                </div>
+
+                <div class="empleado">
+                    <img src="imagenes/SobreNosotros/Chief of Staff.webp" alt="Nuestro Equipo">
+                    <h3 class="equipoNombre">Lorena Salvatierra</h3>
+                    <h4 class="equipoCargo">Chief of Staff</h4>
+                </div>
+            </div>
+
+            <div class="nosotros__equipo">
+                <div class="empleado">
+                    <img src="imagenes/SobreNosotros/Lead Software Engineer.webp" alt="Nuestro Equipo">
+                    <h3 class="equipoNombre">Leo Hernández</h3>
+                    <h4 class="equipoCargo">Lead Software Engineer</h4>
+                </div>
+
+                <div class="empleado">
+                    <img src="imagenes/SobreNosotros/Lead Back-End Engineer.webp" alt="Nuestro Equipo">
+                    <h3 class="equipoNombre">José Coutinho</h3>
+                    <h4 class="equipoCargo">Lead Back-End Engineer</h4>
+                </div>
+
+                <div class="empleado">
+                    <img src="imagenes/SobreNosotros/Lead Front-End Engineer.webp" alt="Nuestro Equipo">
+                    <h3 class="equipoNombre">Sofía Valverde</h3>
+                    <h4 class="equipoCargo">Lead Front-End Engineer</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__contenedor">
+            <form action="###" method="###" enctype="">
+                <label for="reporte"><b>Suscríbete a nuestro Reporte semanal de Inversiones:</b></label>
+                <input type="email" name="newsletter" id="reporte" placeholder="Ingrese su E-mail...">
+                <input type="submit" value="Enviar" id="botonEnviar">
+            </form>
+
+            <div class="contenedor__redes">
+                <div id="redesConectate">
+                    Conectate con Nosotros
+                </div>
+
+                <!--Como no tengo perfil en redes de esta página que estoy creando, se direcciona a la página principal de caa red social-->
+                <nav class="redes__iconos">
+                    <a href="https://es-la.facebook.com/" title="facebook" target="_blank"><img src="imagenes/facebook.webp" alt="Ir a Nuestro Perfil de Facebook" id="facebook"/></a>
+
+                    <a href="https://www.instagram.com/?hl=es-la" title="instagram" target="_blank"><img src="imagenes/instagram.webp" alt="Ir a Nuestro Perfil de Instagram" id="instagram"/></a>
+
+                    <a href="https://twitter.com/?lang=es" title="twitter" target="_blank"><img src="imagenes/twitter.webp" alt="Ir a Nuestro Perfil de Twitter" id="twitter"/></a>
+                </nav>
+            </div>
+
+            <div class="contenedor__aplicaciones">
+                <span>Descarga Nuestra Aplicación</span>
+
+                <div id="downloadApps">
+                    <img src="imagenes/phone.webp" alt="phone" id="phone">
+
+                    <a title="appstore" href="https://www.apple.com/la/app-store/" target="_blank"><img src="imagenes/appstore.webp" alt="appstore" id="appStore"/></a>   
+
+                    <a title="googleplay" href="https://play.google.com/store?hl=es" target="_blank"><img src="imagenes/googleplay.webp" alt="googleplay" id="playStore"/></a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="footer__navegacion">
+            <ul>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="empleo.html">Empleo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__derechos">
+            <span>2021 - Donde Invertir - Derechos Reservados</span>
+        </div>
+    </footer>
+
+    <!--Aquí va vinculado JS - BOOTSTRAP por CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!--Descripción de Sitio Web y Keywords-->
+        <meta name="description" content="El Portal Financiero donde no solo estás actualizado del mundo de inversiones, si no, que además puedes invertir tus ahorros de manera segura y transparente.">
+        <meta name="keywords" content="invertir, criptomonedas, acciones, inversiones, finanzas, fintech, ahorros, blockchain, bitcoin, stocks">
+    
+        <!--Aquí va las distintas Tipografías-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Montserrat&family=Noto+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+        <!--Se agrega la imagen Favicon para que se muestre en la Pestaña de la página junto con el título-->
+        <link rel="shortcut icon" type="image/x-icon" href="imagenes/favi.ico">
+        
+        <!--Aquí va vinculado CSS - BOOTSTRAP por CDN-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <!--Aquí se vincula el archivo de Estilos CSS a mi HTML-->
+        <link rel="stylesheet" href="css/estilos.css"> 
+        
+        <!--Título de la Pestaña del Sitio Web-->
+        <title>Donde Invertir | Acciones</title>
+    
+    </head>
+<body>
+    <header>
+        <div class="header__contenedor">
+            <!--Imagen Logotipo-->
+            <div class="contenedor__logo">
+                <a href="index.html"><img src="imagenes/logo.webp" alt="Logo"></a>
+            </div>
+
+            <!--Texto que va al lado del Logotipo-->
+            <div class="contenedor__titulo">
+                <h1>donde Invertir</h1>
+            </div>
+            
+            <!--Los botones de Iniciar Sesión y Registrarse se complemenatrán con futuros cursos donde se profundiza el apartado de Formulario, debido a esto, se colocan como botones simples-->
+            <div id="barraDeRegistro">
+                <form action="###" method="###" enctype="" id="formHeaderUno">
+                    <input type="search" name="busqueda" placeholder="Busca tu Acción o Criptomoneda Preferida..." id="search">
+                    <input type="submit" value="Buscar" id="botonBuscar">
+                </form>
+
+                <!--Esto se sustituye por MODAL de BOOTSTRAP con JS-->
+                <!-- <form action="" method="" enctype="" id="formHeaderDos">
+                    <input type="submit" value="Iniciar Sesión" id="botonIniciarSesion">
+
+                    <input type="submit" value="Registrarse" id="botonRegistrarse">
+                </form> -->
+
+                <!--MODAL de BOOTSTRAP con JS-->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Iniciar Sesión
+                </button>
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Registrarse
+                </button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">ESTIMADO CLIENTE</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            
+                            <div class="modal-body">
+                            Este sitio web actualmente se encuentra en fase de creación y codificación para poder brindarle el mejor servicio. Muy pronto podrá invertir sus ahorros de una manera segura!
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="header__navegacion">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="acciones.html">Acciones</a></li>
+                <li><a href="criptomonedas.html">Criptomonedas</a></li>
+                <li><a href="analisis.html">Análisis</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="seccionUnoAcciones">
+            <div class="tipoDeActivos">
+                <h2 class="tituloGrande">Acciones</h2>
+                <!--Estos formularios a continuación son para cumplir con la evaluación y el contenido del curso, pero sé que este tipo de formularios y actualizaciones de precio de cotización de acciones en tiempo real, se verán en otros cursos-->
+                <form action="###" method="###" enctype="">
+                    <select name="acciones" id="accion">
+                        <option value="aaple">Aaple</option>
+                        <option value="amzn">Amazon</option>
+                        <option value="ko">Coca-Cola</option>
+                        <option value="meli">Mercado Libre</option>
+                        <option value="msft">Microsoft</option>
+                    </select>
+                </form>
+
+                <form action="###" method="###" enctype="">
+                    <input type="submit" value="Comprar" id="comprarActivo">
+
+                    <input type="submit" value="Vender" id="venderActivo">
+                </form>
+            </div>
+
+            <div class="precioDeActivos">
+                <!--Estos números en realidad son precios y variaciones porcentuales de las acciones en tiempo real. Como es materia de cursos más avanzados, en este caso son únicamente representativos-->
+                <span class="diferenciaAyer">Ayer: -0,98%</span>
+
+                <span class="precioActual">USD  56,25</span>
+
+                <span class="diferenciaHoy">Hoy: +1,22%</span>
+            </div>
+
+            <div class="graficoActual">
+                <!--Esta imagen a continuación representa lo que sería un gráfico de variaciones de precios reales del activo, debido a que en este curso no aprendemos esto, lo represento con una imagen de un gráfico-->
+                <img src="imagenes/graficoacciones.webp" alt="Precio de Coca-Cola">
+                
+                <!--Esta lista a continuación sería para actualizar el gráfico de la acción en diferentes temporalidades, por eso les coloco un enlace, porque realizarían un cambio al gráfico-->
+                <ul>
+                    <li><a href="#">15m</a></li>
+                    <li><a href="#">30m</a></li>
+                    <li><a href="#">1h</a></li>
+                    <li><a href="#">4h</a></li>
+                    <li><a href="#">1D</a></li>
+                    <li><a href="#">1S</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="seccionDosAcciones">
+            <div class="tituloTablaOperaciones">
+                Últimas Operaciones Realizadas en Coca-Cola:
+            </div>
+
+            <!--Esta tabla es representativa y para ser evaluado en el curso. Pero esta tabla reflejará las operaciones realizadas de diferentes usuarios en esta acción determinada.-->
+            <div class="tablaOperaciones">
+                <table class="tablaActivo" border="1" >
+                    <tr class="tablaFilaPrincipal">
+                        <th>Hora</th>
+                        <th>Precio</th>
+                        <th>Tipo</th>
+                    </tr>
+
+                    <tr>
+                        <td>13:23</td>
+                        <td>56,25</td>
+                        <td>Compra</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:22</td>
+                        <td>56,24</td>
+                        <td>Venta</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:21</td>
+                        <td>56,26</td>
+                        <td>Compra</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:21</td>
+                        <td>56,25</td>
+                        <td>Compra</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:20</td>
+                        <td>56,23</td>
+                        <td>Venta</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section class="seccionTresAcciones">
+            <h2 class="tituloDestacado" id="noticiaSecundaria">Noticias Sobre Acciones</h2>
+
+            <div>
+                <article class="articuloNoticiaSecundaria" id="articuloUnoAcciones">
+                    <a href="#" title="Wall Street sube a máximos históricos." target="_blank"><img src="imagenes/AccionesNoticias1.webp" alt="Wall Street sube a máximos históricos." /></a>
+                    <a href="#" target="_blank"><p class="contenidoSecundario">Wall Street sube a máximos históricos por ganancias empresariales y fortaleza económica</p></a>
+                </article>
+
+                <article class="articuloNoticiaSecundaria" id="articuloDosAcciones">
+                    <a href="#" title="Twitter y Snapchat suben luego de presentar resultados." target="_blank"><img src="imagenes/AccionesNoticias2.webp" alt="Twitter y Snapchat suben luego de presentar resultados." /></a>
+                    <a href="#" target="_blank"><p class="contenidoSecundario">Redes sociales: Twitter y Snapchat suben luego de presentar resultados</p></a>
+                </article>
+
+                <article class="articuloNoticiaSecundaria" id="articuloTresAcciones">
+                    <a href="#" title="Tesla volverá a aceptar Bitcoin." target="_blank"><img src="imagenes/AccionesNoticias3.webp" alt="Tesla volverá a aceptar Bitcoin." /></a>
+                    <a href="#" target="_blank"><p class="contenidoSecundario">Elon Musk ahora dice que Tesla volverá a aceptar Bitcoin como medio de pago</p></a>
+                </article>
+            </div>
+
+            <!--Me falta agrega agregar la flecha que va desplazando a más noticias hacia el lado derecho, lo que llaman Carrusel de  Imágenes, que lo veremos más adelante-->
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer__contenedor">
+            <form action="###" method="###" enctype="">
+                <label for="reporte"><b>Suscríbete a nuestro Reporte semanal de Inversiones:</b></label>
+                <input type="email" name="newsletter" id="reporte" placeholder="Ingrese su E-mail...">
+                <input type="submit" value="Enviar" id="botonEnviar">
+            </form>
+
+            <div class="contenedor__redes">
+                <div id="redesConectate">
+                    Conectate con Nosotros
+                </div>
+
+                <!--Como no tengo perfil en redes de esta página que estoy creando, se direcciona a la página principal de caa red social-->
+                <nav class="redes__iconos">
+                    <a href="https://es-la.facebook.com/" title="facebook" target="_blank"><img src="imagenes/facebook.webp" alt="Ir a Nuestro Perfil de Facebook" id="facebook"/></a>
+
+                    <a href="https://www.instagram.com/?hl=es-la" title="instagram" target="_blank"><img src="imagenes/instagram.webp" alt="Ir a Nuestro Perfil de Instagram" id="instagram"/></a>
+
+                    <a href="https://twitter.com/?lang=es" title="twitter" target="_blank"><img src="imagenes/twitter.webp" alt="Ir a Nuestro Perfil de Twitter" id="twitter"/></a>
+                </nav>
+            </div>
+
+            <div class="contenedor__aplicaciones">
+                <span>Descarga Nuestra Aplicación</span>
+
+                <div id="downloadApps">
+                    <img src="imagenes/phone.webp" alt="phone" id="phone">
+
+                    <a title="appstore" href="https://www.apple.com/la/app-store/" target="_blank"><img src="imagenes/appstore.webp" alt="appstore" id="appStore"/></a>   
+
+                    <a title="googleplay" href="https://play.google.com/store?hl=es" target="_blank"><img src="imagenes/googleplay.webp" alt="googleplay" id="playStore"/></a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="footer__navegacion">
+            <ul>
+                <li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="empleo.html">Empleo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__derechos">
+            <span>2021 - Donde Invertir - Derechos Reservados</span>
+        </div>
+    </footer>
+
+    <!--Aquí va vinculado JS - BOOTSTRAP por CDN-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

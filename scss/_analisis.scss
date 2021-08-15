@@ -1,0 +1,80 @@
+/*Estilos para el MAIN del apartado ANÁLISIS*/
+/*Estilos para el MAIN del apartado ANÁLISIS*/
+/*Estilos para el MAIN del apartado ANÁLISIS*/
+
+main section.seccionUnoAnalisis, section.seccionDosAnalisis{
+    width: 83%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+main section.seccionUnoAnalisis div.analisisAcciones, div.analisisCryptos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+main section div article.articuloAnalisis{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+main section div article.articuloAnalisis h3{
+    max-width: 350px;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: rgb(12, 58, 70);
+    margin-left: 15px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+main section div article.articuloAnalisis h3:hover{
+    color: white;
+}
+
+main section div article.articuloAnalisis p.contenidoAnalisis{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+    width: 350px;
+    height: auto;
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+main section div article cite{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(77, 77, 77);
+    margin-left: 15px;
+}
+
+/*MIXIN de tamaño de imágenes*/
+@mixin images($width, $height){
+    width: $width;
+    height: $height;
+}
+
+main section.seccionUnoAnalisis div.analisisAcciones article img{
+    @include images(160px, auto);
+}
+
+main section.seccionDosAnalisis div.analisisCryptos article img{
+    @include images(160px, auto);
+}
+/*Fin de MIXIN*/

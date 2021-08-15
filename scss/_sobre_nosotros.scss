@@ -1,0 +1,85 @@
+/*Estilos para el MAIN del apartado SOBRE NOSOTROS*/
+/*Estilos para el MAIN del apartado SOBRE NOSOTROS*/
+/*Estilos para el MAIN del apartado SOBRE NOSOTROS*/
+
+.seccion__nosotros--uno, .seccion__nosotros--dos{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.seccion__nosotros--uno .nosotros__conocenos, .nosotros__actualidad, .nosotros__equipo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.seccion__nosotros--uno div p.contenidoDestacado{
+    font-family: 'Noto Sans', sans-serif;
+    color: black;
+    width: 50%;
+    height: auto;
+    text-align: justify;
+    display: inline-block;
+}
+
+.seccion__nosotros--uno div iframe{
+    width: 40%;
+    animation-name: conociendo_donde_invertir;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0s;
+}
+
+@keyframes conociendo_donde_invertir{
+    0%{ width: 40%; }
+    20%{ width: 42%; }
+    40%{ width: 44%; }
+    60%{ width: 46%; }
+    80%{ width: 48%; }
+    100%{ width: 50%; }
+}
+
+.seccion__nosotros--uno div h2.tituloGrande{
+    text-align: left;
+}
+
+.seccion__nosotros--dos div#nuestroEquipoTitulo h2{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.seccion__nosotros--dos div h3.equipoNombre{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(12, 58, 70);
+    text-align: center;
+}
+
+.seccion__nosotros--dos div h4.equipoCargo{
+    font-family: 'Noto Sans', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(139, 19, 19);
+    text-align: center;
+}
+
+.seccion__nosotros--dos div img{
+    width: 250px;
+    height: auto;
+}
