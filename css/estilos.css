@@ -1244,3 +1244,55 @@ main section.seccionDosAnalisis div.analisisCryptos article img {
 }
 
 /*Aquí Finaliza Media Queries (MOBILE-FIRST) de CONTACTO*/
+/*Estilos para la página 404 NOT FOUND*/
+/*Estilos para la página 404 NOT FOUND*/
+/*Estilos para la página 404 NOT FOUND*/
+.main__notFound {
+  width: 100%;
+  height: auto;
+  background: black;
+}
+
+.not__found {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 30%;
+}
+
+.not__found div img {
+  display: block;
+  width: 15%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.not__found span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  color: orange;
+  font-weight: bold;
+  margin-top: 3%;
+}
+
+.not__found p.error__404 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  color: orange;
+  font-weight: bold;
+  margin-bottom: 4%;
+}
+
+.not__found p.contenido__error {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 20px;
+  color: white;
+  width: 60%;
+  text-align: center;
+}
+
+.not__found .btn {
+  font-family: 'Encode Sans SC', sans-serif;
+}
