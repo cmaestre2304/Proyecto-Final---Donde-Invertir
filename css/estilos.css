@@ -152,6 +152,9 @@ header {
     font-weight: bold;
     padding: 3px 5px 3px 5px;
   }
+  .modal {
+    width: 80%;
+  }
 }
 
 /*Aquí Finaliza Media Queries (MOBILE-FIRST) del HEADER*/
@@ -690,7 +693,7 @@ main section div.graficoActual {
 }
 
 main section div.graficoActual img {
-  width: 800px;
+  width: 80%;
   height: auto;
   margin-right: auto;
   margin-left: auto;
@@ -923,6 +926,46 @@ main section.seccionDosAnalisis div.analisisCryptos article img {
 }
 
 /*Fin de MIXIN*/
+@media (max-width: 768px) {
+  .tituloGrande {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .analisisAcciones, .analisisCryptos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .articuloAnalisis {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+  }
+  .articuloAnalisis img {
+    padding-top: 3%;
+  }
+  .articuloAnalisis div h3 {
+    width: 70%;
+    margin-top: 3%;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    text-align: center !important;
+  }
+  .articuloAnalisis div .contenidoAnalisis {
+    width: 90% !important;
+  }
+  .articuloAnalisis div cite {
+    margin-top: 2%;
+    margin-bottom: 5%;
+  }
+}
+
 /*Estilos para el MAIN del apartado SOBRE NOSOTROS*/
 /*Estilos para el MAIN del apartado SOBRE NOSOTROS*/
 /*Estilos para el MAIN del apartado SOBRE NOSOTROS*/

@@ -102,7 +102,7 @@ header{
 
 /*Media Queries (MOBILE-FIRST) del HEADER para Tablets y Móviles*/
 
-@media (max-width:768px){   
+@media (max-width: 768px) {   
     header{
         width: 100%;
         /* height: 30%; */
@@ -163,6 +163,11 @@ header{
         font-weight: bold;
         padding: 3px 5px 3px 5px;
     }
+
+    .modal{
+        width: 80%;
+    }
+
 }
 /*Aquí Finaliza Media Queries (MOBILE-FIRST) del HEADER*/
 
