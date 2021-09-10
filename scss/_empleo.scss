@@ -68,3 +68,16 @@
 .seccion__empleo div form input#botonSubirCV:hover{
     background-color: rgb(44, 151, 140);
 }
+
+@media (max-width: 768px) {
+    .empleo__descripcion .tituloDestacado{
+        text-align: center;
+    }
+
+    .empleo__vacante .contenidoDestacado{
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}

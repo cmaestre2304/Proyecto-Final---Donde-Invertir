@@ -28,70 +28,50 @@
 
 </head>
 <body>
-    <header>
-        <div class="header__contenedor">
-            <!--Imagen Logotipo-->
-            <div class="contenedor__logo">
-                <a href="index.html"><img src="imagenes/logo.webp" alt="Logo"></a>
-            </div>
-
-            <!--Texto que va al lado del Logotipo-->
-            <div class="contenedor__titulo">
-                <h1>donde Invertir</h1>
-            </div>
-            
-            <!--Los botones de Iniciar Sesión y Registrarse se complemenatrán con futuros cursos donde se profundiza el apartado de Formulario, debido a esto, se colocan como botones simples-->
-            <div id="barraDeRegistro">
-                <form action="###" method="###" enctype="" id="formHeaderUno">
-                    <input type="search" name="busqueda" placeholder="Busca tu Acción o Criptomoneda Preferida..." id="search">
-                    <input type="submit" value="Buscar" id="botonBuscar">
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="imagenes/logo.webp" class="bi me-2" width="100" height="auto" role="img" aria-label="Donde Invertir">
+                </a>
+    
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="index.html" class="nav-link px-2 text-white">INICIO</a></li>
+                    <li><a href="acciones.html" class="nav-link px-2 text-white">ACCIONES</a></li>
+                    <li><a href="criptomonedas.html" class="nav-link px-2 text-white">CRIPTOMONEDAS</a></li>
+                    <li><a href="analisis.html" class="nav-link px-2 text-white">ANÁLISIS</a></li>
+                </ul>
+    
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+                    <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Search">
                 </form>
+    
+                <div class="text-end">
+                    <button type="button" class="btn btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">INICIAR SESIÓN</button>
 
-                <!--Esto se sustituye por MODAL de BOOTSTRAP con JS-->
-                <!-- <form action="" method="" enctype="" id="formHeaderDos">
-                    <input type="submit" value="Iniciar Sesión" id="botonIniciarSesion">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">REGISTRARSE</button>
 
-                    <input type="submit" value="Registrarse" id="botonRegistrarse">
-                </form> -->
-
-                <!--MODAL de BOOTSTRAP con JS-->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Iniciar Sesión
-                </button>
-
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    Registrarse
-                </button>
-
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">ESTIMADO CLIENTE</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            
-                            <div class="modal-body">
-                            Este sitio web actualmente se encuentra en fase de creación y codificación para poder brindarle el mejor servicio. Muy pronto podrá invertir sus ahorros de una manera segura!
-                            </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">ESTIMADO CLIENTE</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                
+                                <div class="modal-body text-black">
+                                Este sitio web actualmente se encuentra en fase de creación y codificación para poder brindarle el mejor servicio. Muy pronto podrá invertir sus ahorros de una manera segura!
+                                </div>
+    
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <nav class="header__navegacion">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="acciones.html">Acciones</a></li>
-                <li><a href="criptomonedas.html">Criptomonedas</a></li>
-                <li><a href="analisis.html">Análisis</a></li>
-            </ul>
-        </nav>
     </header>
 
 
@@ -287,7 +267,7 @@
             </ul>
         </nav>
 
-        <div class="footer__derechos">
+        <div class="footer__derechos col-md-12">
             <span>2021 - Donde Invertir - Derechos Reservados</span>
         </div>
     </footer>

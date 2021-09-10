@@ -83,3 +83,33 @@
     width: 250px;
     height: auto;
 }
+
+@media (max-width:768px) {
+    .nosotros__conocenos, .nosotros__actualidad{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .seccion__nosotros--uno div.nosotros__conocenos p.contenidoDestacado{
+        width: 105%;
+    }
+
+    .seccion__nosotros--uno div.nosotros__actualidad p.contenidoDestacado{
+        width: 105%;
+    }
+
+    .seccion__nosotros--uno div iframe{
+        animation-name: unset;
+        width: 105%;
+        height: auto;
+    }
+
+    .seccion__nosotros--uno .nosotros__actualidad iframe{
+        margin-bottom: 7%;
+    }
+
+
+}

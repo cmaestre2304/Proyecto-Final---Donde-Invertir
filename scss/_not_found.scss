@@ -52,3 +52,18 @@
 .not__found .btn{
     font-family: 'Encode Sans SC', sans-serif;
 }
+
+@media (max-width:768px) {
+    .not__found > span {
+        font-size: 30px;
+    }
+
+    .not__found > p.error__404 {
+        font-size: 25px;
+    }
+
+    .not__found div img{
+        width: 30%;
+        height: auto;
+    }
+}

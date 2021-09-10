@@ -213,6 +213,29 @@ main section.seccionTresAcciones article#articuloTresAcciones img{
     height: auto;
 }
 
+@media (max-width: 768px) {
+    main section.seccionTresAcciones div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section.seccionTresAcciones div article#articuloUnoAcciones{
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    main section.seccionTresAcciones div article#articuloDosAcciones{
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+}
+
+
+
 
 /*Artículos Cryptomonedas*/
 
@@ -252,4 +275,25 @@ main section.seccionTresCryptos article#articuloDosCryptos img{
 main section.seccionTresCryptos article#articuloTresCryptos img{
     width: 250px;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    main section.seccionTresCryptos div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section.seccionTresCryptos div article#articuloUnoCryptos{
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
+    main section.seccionTresCryptos div article#articuloDosCryptos{
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+
 }
